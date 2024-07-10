@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5a1narsdf6e0"]
+
+[ext_resource type="PackedScene" uid="uid://dsr7534o2u3yr" path="res://scenes/test_player.tscn" id="1_5dk6v"]
+[ext_resource type="PackedScene" uid="uid://ddnxb3cfpfsja" path="res://scenes/pawn.tscn" id="2_4nfth"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_7idm7"]
+vertices = PackedVector2Array(1135, 647, 13, 647, 13, 46, 1135, 46)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-2, 31, 1150, 31, 1150, 662, -2, 662)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 15.0
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_5dk6v")]
+position = Vector2(47, 53)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+position = Vector2(2, -2)
+navigation_polygon = SubResource("NavigationPolygon_7idm7")
+
+[node name="Pawn" parent="." instance=ExtResource("2_4nfth")]
+position = Vector2(309, 287)
+current_health = 250
+
+[node name="Pawn2" parent="." instance=ExtResource("2_4nfth")]
+position = Vector2(217, 336)
+current_health = 250
