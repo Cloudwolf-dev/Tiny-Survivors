@@ -2,7 +2,9 @@ res://scenes/test_scene.tscn
 res://shaders/slash.gdshader
 res://scenes/test_player.tscn
 res://scenes/pawn.tscn
-res://scripts/pawn.gd
 res://scripts/player.gd
-res://scripts/move.gd
-res://scenes/AreaDamagePivot.gd
+res://scenes/HUD.tscn
+res://scenes/HUD.gd
+res://scripts/pawn.gd
+res://scripts/damage_label.gd
+res://scenes/damage_label.tscn

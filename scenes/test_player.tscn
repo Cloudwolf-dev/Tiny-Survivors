@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_0dxlv"]
 [ext_resource type="Texture2D" uid="uid://ctxpb0o415p5y" path="res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_2mvjx"]
-[ext_resource type="Script" path="res://scenes/AreaDamagePivot.gd" id="3_r0410"]
+[ext_resource type="Script" path="res://area_damage.gd" id="3_gqepo"]
 [ext_resource type="Texture2D" uid="uid://7xvncph6ylj1" path="res://icon.svg" id="4_ihjn7"]
 [ext_resource type="Texture2D" uid="uid://t7uhpadn1gk5" path="res://imported/rpgiab_icon_pack_v1.3/16x16/arrow_blue_right.png" id="4_lx4ta"]
 [ext_resource type="Texture2D" uid="uid://bw5c5py1by1wg" path="res://imported/kenney_particle-pack/PNG (Transparent)/slash_02.png" id="5_lfqt5"]
@@ -169,7 +169,6 @@ script = ExtResource("1_0dxlv")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 path_desired_distance = 5.0
-debug_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_2mvjx")
@@ -191,7 +190,7 @@ autoplay = "idle"
 
 [node name="AreaDamagePivot" type="Node2D" parent="."]
 position = Vector2(0, -3)
-script = ExtResource("3_r0410")
+script = ExtResource("3_gqepo")
 
 [node name="Area2D" type="Area2D" parent="AreaDamagePivot"]
 position = Vector2(47, 0)
@@ -223,6 +222,7 @@ script = ExtResource("6_qha7y")
 position = Vector2(81, -3)
 
 [node name="Sprite2D" type="Sprite2D" parent="TargetDestinationPivot/TargetDestination"]
+visible = false
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("4_ihjn7")
 

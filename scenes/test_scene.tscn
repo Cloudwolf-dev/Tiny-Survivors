@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5a1narsdf6e0"]
+[gd_scene load_steps=5 format=3 uid="uid://b5a1narsdf6e0"]
 
 [ext_resource type="PackedScene" uid="uid://dsr7534o2u3yr" path="res://scenes/test_player.tscn" id="1_5dk6v"]
 [ext_resource type="PackedScene" uid="uid://ddnxb3cfpfsja" path="res://scenes/pawn.tscn" id="2_4nfth"]
+[ext_resource type="PackedScene" uid="uid://cmju3mw478lc7" path="res://scenes/HUD.tscn" id="3_ed2st"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_7idm7"]
 vertices = PackedVector2Array(1135, 647, 13, 647, 13, 46, 1135, 46)
@@ -22,8 +23,10 @@ navigation_polygon = SubResource("NavigationPolygon_7idm7")
 
 [node name="Pawn" parent="." instance=ExtResource("2_4nfth")]
 position = Vector2(309, 287)
-current_health = 250
 
 [node name="Pawn2" parent="." instance=ExtResource("2_4nfth")]
 position = Vector2(217, 336)
-current_health = 250
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("3_ed2st")]

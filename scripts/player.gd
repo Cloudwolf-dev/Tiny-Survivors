@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 #Player stats
 const constante = 10
+@export var crit_chance = 10
 @export var speed: float = 300
 @onready var sprite_2d: Sprite2D = $Sprite2D
 
@@ -10,6 +11,7 @@ const constante = 10
 @onready var joystick_target_destination = $TargetDestinationPivot/TargetDestination
 @onready var target_destination_pivot = $TargetDestinationPivot
 @onready var target_attack = $TargetAttackPivot/TargetAttack
+@onready var game_hud
 
 #Point&Click Movement
 @onready var nav: NavigationAgent2D = $NavigationAgent2D
@@ -25,10 +27,10 @@ var move_axis: Vector2 = Vector2.ZERO
 var target_axis: Vector2 = Vector2.ZERO
 
 var attack_cooldown:float = 0.8
+var is_damage_critical = false
 
-func _process(delta: float) -> void:
-	print(is_using_joystick)
-	pass
+func _ready():
+	game_hud = get_tree().get_nodes_in_group("HUD")[0]
 	
 func _input(event):
 	if event is InputEventMouseMotion:
@@ -107,13 +109,18 @@ func attack():
 
 func do_damage():
 	var bodies = damage_area.get_overlapping_bodies()
+	var crit = false
 	for body in bodies:
-		var crit_chance = randi_range(1,10)
-		var damage = randi_range(50,80)
+		crit_chance = randi_range(2,10)
+		var damage = randi_range(30,40)
 		if crit_chance > 7:
 			damage *= 2
-			print("Crit!")
-		body.damage(damage)
+			game_hud.combat_log_label.text = "Critical!"
+			crit = true
+		else: 
+			crit = false
+		body.is_damage_critical = is_damage_critical
+		body.damage(damage, crit)
 		pass
 
 func stop_attack():
