@@ -371,7 +371,7 @@ show_percentage = false
 sprite_frames = SubResource("SpriteFrames_b08gd")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.274288
+frame_progress = 0.800697
 offset = Vector2(0, -23)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
