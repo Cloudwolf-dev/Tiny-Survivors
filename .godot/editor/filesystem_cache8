@@ -1,11 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720735098
+::res://::1720988059
 area_damage.gd::GDScript::-1::1720628768::0::1::::<>Node2D<>::
+enfermeira-joy_albedo-high.png::CompressedTexture2D::4681855393302452567::1720785735::1720785736::1::::<><>::
+enfermeira-joy_albedo.png::CompressedTexture2D::3945481930894329338::1720784480::1720784481::1::::<><>::
+enfermeira-joy_albedo_export.png::CompressedTexture2D::783822220557071563::1720784924::1720784925::1::::<><>::
+enfermeira-joy_normal2.png::CompressedTexture2D::4200524569739525856::1720787523::1720787527::1::::<><>::
+enfermeira-joy_normal.png::CompressedTexture2D::798324472219770797::1720786593::1720785121::1::::<><>::
 icon.svg::CompressedTexture2D::2294822085508467784::1716571126::1716571139::1::::<><>::
 redo.png::CompressedTexture2D::7525002810393379120::1720544570::1720544571::1::::<><>::
 static1.png::CompressedTexture2D::124457116834101490::1720725569::1720725586::1::::<><>::
 static1_2X_n.png::CompressedTexture2D::5973563510113282791::1720735098::1720735103::1::::<><>::
 static1_n.png::CompressedTexture2D::7653371355097287621::1720725569::1720725586::1::::<><>::
+static2.png::CompressedTexture2D::8374086118148881156::1720810063::1720810107::1::::<><>::
+static2_n2.png::CompressedTexture2D::2481644433404005070::1720810102::1720810107::1::::<><>::
+static2_n2_n2.png::CompressedTexture2D::8495672753784608831::1720810102::1720810107::1::::<><>::
+static2_spec.png::CompressedTexture2D::5404249209112521903::1720810649::1720810651::1::::<><>::
 ::res://addons/::1720641064
 ::res://addons/gd-blender-3d-shortcuts/::1720641064
 plugin.cfg::TextFile::-1::1717588653::0::1::::<><>::
@@ -1506,12 +1515,13 @@ Kenney Pixel Square.ttf::FontFile::7640688189648522503::1720701782::1720701790::
 Kenney Pixel.ttf::FontFile::7976131732824930019::1720701782::1720701790::1::::<><>::
 Kenney Rocket Square.ttf::FontFile::1828712668118389001::1720701782::1720701790::1::::<><>::
 Kenney Rocket.ttf::FontFile::2314408336449721326::1720701782::1720701790::1::::<><>::
-::res://scenes/::1720731994
-damage_label.tscn::PackedScene::893975020994795909::1720731994::0::1::::<><>::uid://86nwv3lhhrxo::::res://resources/fonts/Kenney Future.ttf<>res://scripts/damage_label.gd
-HUD.tscn::PackedScene::5634951898541393848::1720731994::0::1::::<><>::res://scripts/hud.gd
-pawn.tscn::PackedScene::7398065243414563634::1720731993::0::1::::<><>::uid://b8vppnlemrgkb::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png<>res://scripts/pawn.gd<>uid://bjwlyqcmjgevn::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png
-test_player.tscn::PackedScene::8459753692094704385::1720731993::0::1::::<><>::res://scripts/player.gd<>uid://ctxpb0o415p5y::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png<>res://area_damage.gd<>uid://7xvncph6ylj1::::res://icon.svg<>uid://t7uhpadn1gk5::::res://imported/rpgiab_icon_pack_v1.3/16x16/arrow_blue_right.png<>uid://bw5c5py1by1wg::::res://imported/kenney_particle-pack/PNG (Transparent)/slash_02.png<>res://scripts/move.gd
-test_scene.tscn::PackedScene::4493687877050518517::1720731993::0::1::::<><>::uid://dsr7534o2u3yr::::res://scenes/test_player.tscn<>uid://ddnxb3cfpfsja::::res://scenes/pawn.tscn<>uid://cmju3mw478lc7::::res://scenes/HUD.tscn
+::res://scenes/::1720825571
+damage_label.tscn::PackedScene::893975020994795909::1720808126::0::1::::<><>::uid://86nwv3lhhrxo::::res://resources/fonts/Kenney Future.ttf<>res://scripts/damage_label.gd
+HUD.tscn::PackedScene::5634951898541393848::1720808126::0::1::::<><>::res://scripts/hud.gd
+pawn.tscn::PackedScene::7398065243414563634::1720808126::0::1::::<><>::uid://b8vppnlemrgkb::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png<>res://scripts/pawn.gd<>uid://bjwlyqcmjgevn::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png
+test normal map.tscn::PackedScene::2045320928872556608::1720825571::0::1::::<><>::uid://b1j144a3e3gw::::res://static1.png<>uid://crdvyokuyuvox::::res://static1_2X_n.png<>uid://bbmek6mh02mru::::res://static2_n2.png<>uid://7xvncph6ylj1::::res://icon.svg<>uid://ci84gvkqojehj::::res://static2_spec.png<>uid://bv7itma4gyc4s::::res://imported/kenney_particle-pack/PNG (Black background)/circle_05.png<>uid://lfxo4xyqqcwx::::res://enfermeira-joy_albedo_export.png<>uid://b031a5akllty3::::res://enfermeira-joy_normal2.png
+test_player.tscn::PackedScene::8459753692094704385::1720808126::0::1::::<><>::res://scripts/player.gd<>uid://ctxpb0o415p5y::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png<>res://area_damage.gd<>uid://7xvncph6ylj1::::res://icon.svg<>uid://t7uhpadn1gk5::::res://imported/rpgiab_icon_pack_v1.3/16x16/arrow_blue_right.png<>uid://bw5c5py1by1wg::::res://imported/kenney_particle-pack/PNG (Transparent)/slash_02.png<>res://scripts/move.gd
+test_scene.tscn::PackedScene::4493687877050518517::1720808126::0::1::::<><>::uid://dsr7534o2u3yr::::res://scenes/test_player.tscn<>uid://ddnxb3cfpfsja::::res://scenes/pawn.tscn<>uid://cmju3mw478lc7::::res://scenes/HUD.tscn
 ::res://scripts/::1720724269
 damage_label.gd::GDScript::-1::1720724269::0::1::::<>Node2D<>::
 GameManager.gd::GDScript::-1::1720530054::0::1::::<>Node<>res://imported/rpgiab_icon_pack_v1.3/16x16/console.png::
@@ -1519,5 +1529,5 @@ hud.gd::GDScript::-1::1720716341::0::1::::<>Control<>::
 move.gd::GDScript::-1::1720617689::0::1::::<>Node2D<>::
 pawn.gd::GDScript::-1::1720723904::0::1::::<>CharacterBody2D<>::
 player.gd::GDScript::-1::1720721562::0::1::::<>CharacterBody2D<>::
-::res://shaders/::1720731994
-slash.gdshader::Shader::-1::1720731994::0::1::::<><>::
+::res://shaders/::1720825572
+slash.gdshader::Shader::-1::1720825572::0::1::::<><>::

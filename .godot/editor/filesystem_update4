@@ -2,9 +2,6 @@ res://scenes/test_scene.tscn
 res://shaders/slash.gdshader
 res://scenes/test_player.tscn
 res://scenes/pawn.tscn
-res://scripts/player.gd
 res://scenes/HUD.tscn
-res://scenes/HUD.gd
-res://scripts/pawn.gd
-res://scripts/damage_label.gd
 res://scenes/damage_label.tscn
+res://scenes/test normal map.tscn

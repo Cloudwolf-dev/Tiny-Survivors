@@ -1,9 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://4e1ewhw4efq3"]
+[gd_scene load_steps=13 format=3 uid="uid://4e1ewhw4efq3"]
 
 [ext_resource type="Texture2D" uid="uid://b1j144a3e3gw" path="res://static1.png" id="1_wec6q"]
 [ext_resource type="Texture2D" uid="uid://crdvyokuyuvox" path="res://static1_2X_n.png" id="2_3q6j6"]
-[ext_resource type="Texture2D" uid="uid://dhbl54x41cl1v" path="res://static1_n.png" id="3_b5j0m"]
+[ext_resource type="Texture2D" uid="uid://bbmek6mh02mru" path="res://static2_n2.png" id="3_1u4o5"]
+[ext_resource type="Texture2D" uid="uid://7xvncph6ylj1" path="res://icon.svg" id="4_57qw3"]
+[ext_resource type="Texture2D" uid="uid://ci84gvkqojehj" path="res://static2_spec.png" id="4_b3wnc"]
 [ext_resource type="Texture2D" uid="uid://bv7itma4gyc4s" path="res://imported/kenney_particle-pack/PNG (Black background)/circle_05.png" id="4_usef8"]
+[ext_resource type="Texture2D" uid="uid://lfxo4xyqqcwx" path="res://enfermeira-joy_albedo_export.png" id="5_81v0h"]
+[ext_resource type="Texture2D" uid="uid://b031a5akllty3" path="res://enfermeira-joy_normal2.png" id="6_7tuu4"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7qdpl"]
 
@@ -13,7 +17,12 @@ normal_texture = ExtResource("2_3q6j6")
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_m263c"]
 diffuse_texture = ExtResource("1_wec6q")
-normal_texture = ExtResource("3_b5j0m")
+normal_texture = ExtResource("3_1u4o5")
+specular_texture = ExtResource("4_b3wnc")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_wanxa"]
+diffuse_texture = ExtResource("5_81v0h")
+normal_texture = ExtResource("6_7tuu4")
 
 [node name="Node2D" type="Node2D"]
 
@@ -29,19 +38,38 @@ material = SubResource("ShaderMaterial_7qdpl")
 position = Vector2(200, 50)
 texture = SubResource("CanvasTexture_m263c")
 
-[node name="Node2D" type="Node2D" parent="."]
-position = Vector2(1, 3)
+[node name="LUZES" type="Node2D" parent="."]
+z_index = 5
+position = Vector2(11, -3)
 
-[node name="PointLight2D" type="PointLight2D" parent="Node2D"]
+[node name="PointLight2D" type="PointLight2D" parent="LUZES"]
 position = Vector2(50, 50)
 scale = Vector2(0.290905, 0.290905)
 color = Color(1, 0, 1, 1)
 energy = 15.83
 texture = ExtResource("4_usef8")
 
-[node name="PointLight2D2" type="PointLight2D" parent="Node2D"]
-position = Vector2(200, 50)
+[node name="Sprite2D" type="Sprite2D" parent="LUZES/PointLight2D"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_57qw3")
+
+[node name="PointLight2D2" type="PointLight2D" parent="LUZES"]
+position = Vector2(210, 18)
 scale = Vector2(0.290905, 0.290905)
 color = Color(1, 0, 1, 1)
 energy = 15.83
 texture = ExtResource("4_usef8")
+
+[node name="Sprite2D2" type="Sprite2D" parent="LUZES/PointLight2D2"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_57qw3")
+
+[node name="Enfermeira-joyAlbedo" type="Sprite2D" parent="."]
+position = Vector2(50, 166)
+scale = Vector2(2, 2)
+texture = ExtResource("5_81v0h")
+
+[node name="Enfermeira-joyAlbedo2" type="Sprite2D" parent="."]
+position = Vector2(205, 166)
+scale = Vector2(2, 2)
+texture = SubResource("CanvasTexture_wanxa")
