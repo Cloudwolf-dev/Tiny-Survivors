@@ -1,7 +1,8 @@
-[gd_scene load_steps=51 format=3 uid="uid://ddnxb3cfpfsja"]
+[gd_scene load_steps=52 format=3 uid="uid://ddnxb3cfpfsja"]
 
 [ext_resource type="Texture2D" uid="uid://b8vppnlemrgkb" path="res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png" id="1_0vhmw"]
 [ext_resource type="Script" path="res://scripts/pawn.gd" id="1_hivi0"]
+[ext_resource type="Script" path="res://scripts/custom_components/HealthPoints.gd" id="2_ejcop"]
 [ext_resource type="Texture2D" uid="uid://bjwlyqcmjgevn" path="res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png" id="3_6fre3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1v6jw"]
@@ -354,13 +355,22 @@ wall_min_slide_angle = 0.0
 script = ExtResource("1_hivi0")
 current_health = 250
 
-[node name="HealthBar" type="ProgressBar" parent="."]
-z_index = 5
-z_as_relative = false
+[node name="HealthPoints" type="Control" parent="." node_paths=PackedStringArray("HEALTH_BAR")]
+layout_mode = 3
+anchors_preset = 0
 offset_left = -21.0
 offset_top = -59.0
-offset_right = 21.0
-offset_bottom = -52.0
+offset_right = 19.0
+offset_bottom = -19.0
+script = ExtResource("2_ejcop")
+HEALTH_BAR = NodePath("HealthBar")
+
+[node name="HealthBar" type="ProgressBar" parent="HealthPoints"]
+z_index = 5
+z_as_relative = false
+layout_mode = 0
+offset_right = 42.0
+offset_bottom = 7.0
 mouse_filter = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_1v6jw")
 theme_override_styles/fill = SubResource("StyleBoxFlat_8gkp0")
@@ -408,8 +418,10 @@ debug_color = Color(0.859461, 0.330197, 0.401197, 0.42)
 scale = Vector2(1.00923, 0.975935)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
-scale = Vector2(5.10378, 1.94052)
+position = Vector2(0, -11.2712)
+scale = Vector2(5.79137, 3.16807)
 shape = SubResource("CircleShape2D_o0jv5")
 
+[connection signal="died" from="HealthPoints" to="." method="_on_health_points_died"]
 [connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
 [connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]

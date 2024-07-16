@@ -4,18 +4,19 @@ extends Node2D
 @onready var slash_sprite = $Area2D/SlashSprite
 @onready var target_attack_pivot = $"../TargetAttackPivot"
 @onready var target_attack = $"../TargetAttackPivot/TargetAttack"
+@onready var state_machine = $"../StateMachine"
 
 var deadzone = 0.3
 
 
 func _process(delta):
-	if player.is_attacking:
+	if state_machine.current_state == 2:
 		#slash_sprite.visible = true
 		return
-	elif !player.is_attacking && player.target_axis == Vector2.ZERO && !player.is_using_joystick:
+	elif state_machine.current_state != 2 && player.target_axis == Vector2.ZERO && !player.is_using_joystick:
 		#slash_sprite.visible = false
 		look_at(get_global_mouse_position())
-	elif !player.is_attacking && player.target_axis != Vector2.ZERO && player.is_using_joystick:
+	elif state_machine.current_state != 2 && player.target_axis != Vector2.ZERO && player.is_using_joystick:
 		look_at(target_attack.global_position)
 
 func _physics_process(delta):

@@ -40,7 +40,7 @@ texture = SubResource("CanvasTexture_m263c")
 
 [node name="LUZES" type="Node2D" parent="."]
 z_index = 5
-position = Vector2(11, -3)
+position = Vector2(12, -24)
 
 [node name="PointLight2D" type="PointLight2D" parent="LUZES"]
 position = Vector2(50, 50)
@@ -54,7 +54,7 @@ scale = Vector2(0.1, 0.1)
 texture = ExtResource("4_57qw3")
 
 [node name="PointLight2D2" type="PointLight2D" parent="LUZES"]
-position = Vector2(210, 18)
+position = Vector2(200, 50)
 scale = Vector2(0.290905, 0.290905)
 color = Color(1, 0, 1, 1)
 energy = 15.83

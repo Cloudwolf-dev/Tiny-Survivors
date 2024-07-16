@@ -2,10 +2,13 @@ extends CharacterBody2D
 
 @export var current_health: int = 100
 @export var max_health: int = 250
-@onready var health_bar = $HealthBar
-@onready var damage_label = preload("res://scenes/damage_label.tscn")
+@onready var health_bar: ProgressBar = $HealthBar
+@onready var damage_label := preload("res://scenes/damage_label.tscn")
 @onready var collision: CollisionShape2D = $CollisionShape2D
+@onready var hp: HealthPoints = $HealthPoints
+@export_range(50,100) var minimum_attack_range: int = 50
 
+enum {IDLE, RUNNING, ATTACKING}
 
 @onready var ani_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var attack_range: Area2D = $AttackRange
@@ -16,33 +19,34 @@ var player_position: Vector2
 var input_vector := Vector2.ZERO
 var can_follow := true
 var is_dead := false
-var is_damage_critical = false
+var is_damage_critical := false
 
 
 func _process(delta):
 	#print(can_follow)
-	if current_health <= 0:
-		current_health = 0
-		#Play death animation, disable collision, disable collision and set player as dead.
-		ani_sprite.play("death")
-		collision.disabled = true
-		health_bar.visible = false
-		is_dead = true
+	#if current_health <= 0:
+		#current_health = 0
+		##Play death animation, disable collision, disable collision and set player as dead.
+		#ani_sprite.play("death")
+		#collision.disabled = true
+		#health_bar.visible = false
+		#is_dead = true
 
-	health_bar.value = ( float(current_health) / float(max_health) ) * 100
-
+	#health_bar.value = ( float(current_health) / float(max_health) ) * 100
+	pass
 func _physics_process(delta):
 	flip_sprite(input_vector.x)
 	check_targets()
 	if !is_dead:
-		if player != null && can_follow : follow_player()
+		if player != null && can_follow && player.is_dead == false:
+			follow_player()
 		else : ani_sprite.play("idle")
 
 func damage(amount: int, crit: bool):
-	current_health -= amount
-	if current_health < 0:
-		current_health = 0
-	print("Current Health: ", current_health)
+	#current_health -= amount
+	#if current_health < 0:
+		#current_health = 0
+	#print("Current Health: ", current_health)
 	var damage_tween
 	var instance = damage_label.instantiate()
 	instance.damage_text(amount)
@@ -74,10 +78,16 @@ func flip_sprite(direction: float):
 
 func follow_player():
 	player_position = player.global_position
-	input_vector = (player_position - global_position).normalized()
-	ani_sprite.play("run")
-	velocity = input_vector * speed
-	move_and_slide()
+	if global_position.distance_to(player.global_position) < minimum_attack_range:
+		velocity = Vector2.ZERO
+		move_and_slide()
+		ani_sprite.play("idle")
+		return
+	else:
+		input_vector = (player_position - global_position).normalized()
+		ani_sprite.play("run")
+		velocity = input_vector * speed
+		move_and_slide()
 
 func check_targets():
 	var bodies = detection_area.get_overlapping_bodies()
@@ -100,4 +110,11 @@ func _on_animated_sprite_2d_frame_changed():
 	if ani_sprite.animation == "death":
 		if ani_sprite.frame == 19:
 			self.queue_free()
+	pass # Replace with function body.
+
+
+func _on_health_points_died():
+	is_dead = true
+	if is_dead:
+		ani_sprite.play("death")
 	pass # Replace with function body.

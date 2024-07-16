@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.879633,0,0,1.10592,0.992939,-0.988151)">
+        <g id="Camada1">
+            <path d="M7.991,2.923C10.064,1.747 12.766,2.075 14.285,3.158C16.065,4.425 16.461,6.95 14.698,9.476C13.68,11.019 11.14,12.613 8.973,13.643L7.991,14.109L7.008,13.643C4.847,12.616 2.313,11.027 1.292,9.489C-0.48,6.952 -0.084,4.426 1.696,3.158C3.215,2.075 5.918,1.747 7.991,2.923ZM7.991,5.186C6.737,3.399 4.228,3.399 2.974,4.293C1.72,5.186 1.72,6.973 2.974,8.76C3.852,10.1 6.11,11.441 7.991,12.334C9.872,11.441 12.129,10.1 13.007,8.76C14.261,6.973 14.261,5.186 13.007,4.293C11.753,3.399 9.245,3.399 7.991,5.186Z" style="fill:rgb(142,239,151);"/>
+        </g>
+    </g>
+</svg>

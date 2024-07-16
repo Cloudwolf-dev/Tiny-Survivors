@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720988059
+::res://::1721082177
 area_damage.gd::GDScript::-1::1720628768::0::1::::<>Node2D<>::
 enfermeira-joy_albedo-high.png::CompressedTexture2D::4681855393302452567::1720785735::1720785736::1::::<><>::
 enfermeira-joy_albedo.png::CompressedTexture2D::3945481930894329338::1720784480::1720784481::1::::<><>::
@@ -227,11 +227,18 @@ trace_05_rotated.png::CompressedTexture2D::5473975335398996044::1720547517::1720
 trace_06_rotated.png::CompressedTexture2D::2899774893741054565::1720547517::1720547520::1::::<><>::
 trace_07_rotated.png::CompressedTexture2D::7682497736254483199::1720547517::1720547520::1::::<><>::
 ::res://imported/kenney_particle-pack/Unity samples/::1720641064
-::res://imported/rpgiab_icon_pack_v1.3/::1720641067
+::res://imported/rpgiab_icon_pack_v1.3/::1721084154
+Attack.svg::CompressedTexture2D::5975178837864594790::1721076585::1721076588::1::::<><>::
+GEAR_16x.svg::CompressedTexture2D::2995882233778817614::1721082611::1721082614::1::::<><>::
+healthpoints_16x16.png::CompressedTexture2D::7457130080677434224::1721074936::1721074938::1::::<><>::
+HealthPoints_16x.png::CompressedTexture2D::2683668977176997649::1721075636::1721075642::1::::<><>::
+HealthPoints_16x.svg::CompressedTexture2D::911720500771066026::1721076126::1721076129::1::::<><>::
 icon_sheet_16x16.png::CompressedTexture2D::7051615660861062020::1720529330::1720529334::1::::<><>::
 icon_sheet_32x32.png::CompressedTexture2D::5612076540266980677::1720529330::1720529334::1::::<><>::
+PlayerController_16x.svg::CompressedTexture2D::8613281661994014975::1721074207::1721084157::1::::<><>::
 preview.png::CompressedTexture2D::7177501371270561759::1720529330::1720529334::1::::<><>::
 readme.txt::TextFile::-1::1720529330::0::1::::<><>::
+StateMachine_16x.svg::CompressedTexture2D::8195072549792818026::1721082371::1721082374::1::::<><>::
 ::res://imported/rpgiab_icon_pack_v1.3/16x16/::1720641066
 2d.png::CompressedTexture2D::7220687599835845404::1720529324::1720529336::1::::<><>::
 accept.png::CompressedTexture2D::719442091872806391::1720529324::1720529336::1::::<><>::
@@ -1344,7 +1351,8 @@ Archer_Purlple.png::CompressedTexture2D::7192769942345055512::1719168024::171916
 Archer_Red.png::CompressedTexture2D::3329864015511294704::1719168024::1719168800::1::::<><>::
 ::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Yellow/::1720641070
 Archer_Yellow.png::CompressedTexture2D::1396322125778440424::1719168024::1719168801::1::::<><>::
-::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/::1720641070
+::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/::1721065345
+Dead2.png::CompressedTexture2D::3906874486645847234::1721065280::1721065345::1::::<><>::
 Dead.png::CompressedTexture2D::3064248177019560615::1719168024::1719168800::1::::<><>::
 ::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/::1720641070
 ::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Blue/::1720641070
@@ -1356,12 +1364,13 @@ Pawn_Red.png::CompressedTexture2D::4746942698378349045::1719168024::1719168801::
 ::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Yellow/::1720641070
 Pawn_Yellow.png::CompressedTexture2D::1422355006306185988::1719168025::1719168799::1::::<><>::
 ::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/::1720641070
-::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/::1720735099
+::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/::1721073801
 static1.png::CompressedTexture2D::7945428537374615756::1720725233::1720725557::1::::<><>::
 static1_2X.png::CompressedTexture2D::373305984523614679::1720734773::1720734886::1::::<><>::
 static1_2X_n.png::CompressedTexture2D::2167670396055178904::1720735087::1720735099::1::::<><>::
 static1_n.png::CompressedTexture2D::628001824524400508::1720735087::1720725557::1::::<><>::
 Warrior_Blue.png::CompressedTexture2D::6154823961602179072::1719168025::1719168799::1::::<><>::
+Warrior_Blue_v2.png::CompressedTexture2D::5640452568004474757::1721066417::1721066439::1::::<><>::
 ::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Purple/::1720641070
 Warrior_Purple.png::CompressedTexture2D::5920693614047150757::1719168025::1719168799::1::::<><>::
 ::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Red/::1720641070
@@ -1515,19 +1524,25 @@ Kenney Pixel Square.ttf::FontFile::7640688189648522503::1720701782::1720701790::
 Kenney Pixel.ttf::FontFile::7976131732824930019::1720701782::1720701790::1::::<><>::
 Kenney Rocket Square.ttf::FontFile::1828712668118389001::1720701782::1720701790::1::::<><>::
 Kenney Rocket.ttf::FontFile::2314408336449721326::1720701782::1720701790::1::::<><>::
-::res://scenes/::1720825571
-damage_label.tscn::PackedScene::893975020994795909::1720808126::0::1::::<><>::uid://86nwv3lhhrxo::::res://resources/fonts/Kenney Future.ttf<>res://scripts/damage_label.gd
-HUD.tscn::PackedScene::5634951898541393848::1720808126::0::1::::<><>::res://scripts/hud.gd
-pawn.tscn::PackedScene::7398065243414563634::1720808126::0::1::::<><>::uid://b8vppnlemrgkb::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png<>res://scripts/pawn.gd<>uid://bjwlyqcmjgevn::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png
-test normal map.tscn::PackedScene::2045320928872556608::1720825571::0::1::::<><>::uid://b1j144a3e3gw::::res://static1.png<>uid://crdvyokuyuvox::::res://static1_2X_n.png<>uid://bbmek6mh02mru::::res://static2_n2.png<>uid://7xvncph6ylj1::::res://icon.svg<>uid://ci84gvkqojehj::::res://static2_spec.png<>uid://bv7itma4gyc4s::::res://imported/kenney_particle-pack/PNG (Black background)/circle_05.png<>uid://lfxo4xyqqcwx::::res://enfermeira-joy_albedo_export.png<>uid://b031a5akllty3::::res://enfermeira-joy_normal2.png
-test_player.tscn::PackedScene::8459753692094704385::1720808126::0::1::::<><>::res://scripts/player.gd<>uid://ctxpb0o415p5y::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png<>res://area_damage.gd<>uid://7xvncph6ylj1::::res://icon.svg<>uid://t7uhpadn1gk5::::res://imported/rpgiab_icon_pack_v1.3/16x16/arrow_blue_right.png<>uid://bw5c5py1by1wg::::res://imported/kenney_particle-pack/PNG (Transparent)/slash_02.png<>res://scripts/move.gd
-test_scene.tscn::PackedScene::4493687877050518517::1720808126::0::1::::<><>::uid://dsr7534o2u3yr::::res://scenes/test_player.tscn<>uid://ddnxb3cfpfsja::::res://scenes/pawn.tscn<>uid://cmju3mw478lc7::::res://scenes/HUD.tscn
-::res://scripts/::1720724269
+::res://scenes/::1721084070
+damage_label.tscn::PackedScene::893975020994795909::1721083780::0::1::::<><>::uid://86nwv3lhhrxo::::res://resources/fonts/Kenney Future.ttf<>res://scripts/damage_label.gd
+HUD.tscn::PackedScene::5634951898541393848::1721083780::0::1::::<><>::res://scripts/hud.gd
+pawn.tscn::PackedScene::7398065243414563634::1721083781::0::1::::<><>::uid://b8vppnlemrgkb::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png<>res://scripts/pawn.gd<>res://scripts/custom_components/HealthPoints.gd<>uid://bjwlyqcmjgevn::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png
+test normal map.tscn::PackedScene::2045320928872556608::1721083780::0::1::::<><>::uid://b1j144a3e3gw::::res://static1.png<>uid://crdvyokuyuvox::::res://static1_2X_n.png<>uid://bbmek6mh02mru::::res://static2_n2.png<>uid://7xvncph6ylj1::::res://icon.svg<>uid://ci84gvkqojehj::::res://static2_spec.png<>uid://bv7itma4gyc4s::::res://imported/kenney_particle-pack/PNG (Black background)/circle_05.png<>uid://lfxo4xyqqcwx::::res://enfermeira-joy_albedo_export.png<>uid://b031a5akllty3::::res://enfermeira-joy_normal2.png
+test_player.tscn::PackedScene::8459753692094704385::1721084070::0::1::::<><>::res://scripts/player.gd<>uid://cmmjou0rdb6k4::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue_v2.png<>res://area_damage.gd<>uid://7xvncph6ylj1::::res://icon.svg<>uid://t7uhpadn1gk5::::res://imported/rpgiab_icon_pack_v1.3/16x16/arrow_blue_right.png<>uid://bw5c5py1by1wg::::res://imported/kenney_particle-pack/PNG (Transparent)/slash_02.png<>res://scripts/move.gd<>res://scripts/custom_components/Attack.gd<>res://scripts/custom_components/HealthPoints.gd<>res://scripts/custom_components/StateMachine.gd
+test_scene.tscn::PackedScene::4493687877050518517::1721083780::0::1::::<><>::uid://dsr7534o2u3yr::::res://scenes/test_player.tscn<>uid://ddnxb3cfpfsja::::res://scenes/pawn.tscn<>uid://cmju3mw478lc7::::res://scenes/HUD.tscn
+::res://scripts/::1721079448
 damage_label.gd::GDScript::-1::1720724269::0::1::::<>Node2D<>::
 GameManager.gd::GDScript::-1::1720530054::0::1::::<>Node<>res://imported/rpgiab_icon_pack_v1.3/16x16/console.png::
 hud.gd::GDScript::-1::1720716341::0::1::::<>Control<>::
 move.gd::GDScript::-1::1720617689::0::1::::<>Node2D<>::
-pawn.gd::GDScript::-1::1720723904::0::1::::<>CharacterBody2D<>::
-player.gd::GDScript::-1::1720721562::0::1::::<>CharacterBody2D<>::
-::res://shaders/::1720825572
-slash.gdshader::Shader::-1::1720825572::0::1::::<><>::
+pawn.gd::GDScript::-1::1721071422::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1721079448::0::1::::<>CharacterBody2D<>::
+::res://scripts/custom_components/::1721084080
+Attack.gd::GDScript::-1::1721066702::0::1::::Attack<>Node<>res://imported/rpgiab_icon_pack_v1.3/Attack.svg::
+HealthPoints.gd::GDScript::-1::1721079348::0::1::::HealthPoints<>Control<>res://imported/rpgiab_icon_pack_v1.3/HealthPoints_16x.svg::
+PlayerController.gd::GDScript::-1::1721084080::0::1::::<>Node<>::
+State.gd::GDScript::-1::1721083357::0::1::::State<>Node<>res://imported/rpgiab_icon_pack_v1.3/StateMachine_16x.svg::
+StateMachine.gd::GDScript::-1::1721084070::0::1::::StateMachine<>Node<>res://imported/rpgiab_icon_pack_v1.3/GEAR_16x.svg::
+::res://shaders/::1721084070
+slash.gdshader::Shader::-1::1721084070::0::1::::<><>::
