@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721145032
+::res://::1721330509
 area_damage.gd::GDScript::-1::1721088904::0::1::::<>Node2D<>::
 enfermeira-joy_albedo-high.png::CompressedTexture2D::4681855393302452567::1720785735::1720785736::1::::<><>::
 enfermeira-joy_albedo.png::CompressedTexture2D::3945481930894329338::1720784480::1720784481::1::::<><>::
@@ -1532,21 +1532,21 @@ Kenney Pixel Square.ttf::FontFile::7640688189648522503::1720701782::1720701790::
 Kenney Pixel.ttf::FontFile::7976131732824930019::1720701782::1720701790::1::::<><>::
 Kenney Rocket Square.ttf::FontFile::1828712668118389001::1720701782::1720701790::1::::<><>::
 Kenney Rocket.ttf::FontFile::2314408336449721326::1720701782::1720701790::1::::<><>::
-::res://scenes/::1721143157
+::res://scenes/::1721147793
 damage_label.tscn::PackedScene::893975020994795909::1721084978::0::1::::<><>::uid://86nwv3lhhrxo::::res://resources/fonts/Kenney Future.ttf<>res://scripts/damage_label.gd
-HUD.tscn::PackedScene::5634951898541393848::1721141363::0::1::::<><>::res://scripts/hud.gd
-new_player.tscn::PackedScene::396579196885643435::1721143157::0::1::::<><>::uid://cqma7umv45uwj::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png<>res://scripts/custom_components/BehaviourTree.gd<>res://scripts/custom_components/behaviours/Idle.gd
-new_test_scene.tscn::PackedScene::7627179261895278638::1721141364::0::1::::<><>::uid://fwdupiw6b6wl::::res://scenes/new_player.tscn
-pawn.tscn::PackedScene::7398065243414563634::1721141364::0::1::::<><>::uid://b8vppnlemrgkb::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png<>res://scripts/pawn.gd<>res://scripts/custom_components/HealthPoints.gd<>uid://bjwlyqcmjgevn::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png
-player.tscn::PackedScene::8459753692094704385::1721141364::0::1::::<><>::res://scripts/player.gd<>uid://cmmjou0rdb6k4::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue_v2.png<>res://area_damage.gd<>uid://7xvncph6ylj1::::res://icon.svg<>uid://t7uhpadn1gk5::::res://imported/rpgiab_icon_pack_v1.3/16x16/arrow_blue_right.png<>uid://bw5c5py1by1wg::::res://imported/kenney_particle-pack/PNG (Transparent)/slash_02.png<>res://scripts/move.gd<>res://scripts/custom_components/Attack.gd<>res://scripts/custom_components/HealthPoints.gd<>res://scripts/custom_components/StateMachine.gd<>res://scripts/custom_components/PlayerController.gd
+HUD.tscn::PackedScene::5634951898541393848::1721147793::0::1::::<><>::res://scripts/hud.gd
+new_player.tscn::PackedScene::396579196885643435::1721147793::0::1::::<><>::uid://cqma7umv45uwj::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png<>res://scripts/custom_components/BehaviourTree.gd<>res://scripts/custom_components/behaviours/Idle.gd
+new_test_scene.tscn::PackedScene::7627179261895278638::1721147793::0::1::::<><>::uid://fwdupiw6b6wl::::res://scenes/new_player.tscn
+pawn.tscn::PackedScene::7398065243414563634::1721147793::0::1::::<><>::uid://b8vppnlemrgkb::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png<>res://scripts/pawn.gd<>res://scripts/custom_components/HealthPoints.gd<>uid://bjwlyqcmjgevn::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png
+player.tscn::PackedScene::8459753692094704385::1721147793::0::1::::<><>::res://scripts/player.gd<>uid://cmmjou0rdb6k4::::res://imported/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue_v2.png<>res://area_damage.gd<>uid://7xvncph6ylj1::::res://icon.svg<>uid://t7uhpadn1gk5::::res://imported/rpgiab_icon_pack_v1.3/16x16/arrow_blue_right.png<>uid://bw5c5py1by1wg::::res://imported/kenney_particle-pack/PNG (Transparent)/slash_02.png<>res://scripts/move.gd<>res://scripts/custom_components/Attack.gd<>res://scripts/custom_components/HealthPoints.gd<>res://scripts/custom_components/StateMachine.gd<>res://scripts/custom_components/PlayerController.gd
 test normal map.tscn::PackedScene::2045320928872556608::1721084978::0::1::::<><>::uid://b1j144a3e3gw::::res://static1.png<>uid://crdvyokuyuvox::::res://static1_2X_n.png<>uid://bbmek6mh02mru::::res://static2_n2.png<>uid://7xvncph6ylj1::::res://icon.svg<>uid://ci84gvkqojehj::::res://static2_spec.png<>uid://bv7itma4gyc4s::::res://imported/kenney_particle-pack/PNG (Black background)/circle_05.png<>uid://lfxo4xyqqcwx::::res://enfermeira-joy_albedo_export.png<>uid://b031a5akllty3::::res://enfermeira-joy_normal2.png
-test_scene.tscn::PackedScene::4493687877050518517::1721141363::0::1::::<><>::uid://dsr7534o2u3yr::::res://scenes/player.tscn<>uid://ddnxb3cfpfsja::::res://scenes/pawn.tscn
-::res://scripts/::1721126797
+test_scene.tscn::PackedScene::4493687877050518517::1721147792::0::1::::<><>::uid://dsr7534o2u3yr::::res://scenes/player.tscn<>uid://ddnxb3cfpfsja::::res://scenes/pawn.tscn
+::res://scripts/::1721147792
 damage_label.gd::GDScript::-1::1720724269::0::1::::<>Node2D<>::
 GameManager.gd::GDScript::-1::1720530054::0::1::::<>Node<>res://imported/rpgiab_icon_pack_v1.3/16x16/console.png::
 hud.gd::GDScript::-1::1720716341::0::1::::<>Control<>::
 move.gd::GDScript::-1::1720617689::0::1::::<>Node2D<>::
-pawn.gd::GDScript::-1::1721071422::0::1::::<>CharacterBody2D<>::
+pawn.gd::GDScript::-1::1721147792::0::1::::<>CharacterBody2D<>::
 player.gd::GDScript::-1::1721126797::0::1::::<>CharacterBody2D<>::
 ::res://scripts/custom_components/::1721143157
 Attack.gd::GDScript::-1::1721066702::0::1::::Attack<>Node<>res://imported/rpgiab_icon_pack_v1.3/Attack.svg::
@@ -1558,5 +1558,5 @@ State.gd::GDScript::-1::1721083357::0::1::::State<>Node<>res://imported/rpgiab_i
 StateMachine.gd::GDScript::-1::1721126184::0::1::::StateMachine<>Node<>res://imported/rpgiab_icon_pack_v1.3/StateMachine_16x.svg::
 ::res://scripts/custom_components/behaviours/::1721141984
 Idle.gd::GDScript::-1::1721141984::0::1::::Idle<>Behaviour<>::
-::res://shaders/::1721143158
-slash.gdshader::Shader::-1::1721143158::0::1::::<><>::
+::res://shaders/::1721147823
+slash.gdshader::Shader::-1::1721147823::0::1::::<><>::
