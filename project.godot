@@ -15,9 +15,14 @@ run/main_scene="res://scenes/test_scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=900
+window/size/viewport_height=640
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/gd-blender-3d-shortcuts/plugin.cfg")
+enabled=PackedStringArray("res://addons/float_script_editor/plugin.cfg", "res://addons/gd-blender-3d-shortcuts/plugin.cfg")
 
 [input]
 

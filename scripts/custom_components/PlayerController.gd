@@ -35,17 +35,17 @@ func _input(event):
 func _physics_process(delta):
 	distance_to_target = global_position.distance_to(get_global_mouse_position())
 	match state_machine.current_state:
-		0:
+		0: #IDLE
 			_move()
 			_attack()
-		1:
+		1: #RUNNING
 			_move()
 			_attack()
-		2:
+		2: #ATTACK
+			_cancel_attack()
 			pass
-	
-	
-	
+		3: #DEAD
+			animation_player.play("death")
 	pass
 
 func _move():
@@ -55,7 +55,7 @@ func _move():
 		animation_player.play("run")
 	pass
 
-func _jump():
+func _jump(): #TODO
 	pass
 
 func _attack():
@@ -71,7 +71,7 @@ func do_damage():
 	var crit = false
 	for body in bodies:
 		var damage = randi_range(20,20)
-		if body.hp != null:
+		if !body.is_dead:
 			body.hp.damage(damage)
 		pass
 	pass
@@ -79,6 +79,11 @@ func do_damage():
 func stop_attack():
 	state_machine._enter_state(state_machine.States.IDLE)
 	animation_player.play("idle")
+
+func _cancel_attack():
+	if Input.is_action_just_pressed("cancel_attack"):
+		animation_player.play("idle")
+		state_machine._enter_state(state_machine.States.IDLE)
 
 func _flip_sprite():
 	if (player.global_position - damage_area.global_position).sign().x == 1:

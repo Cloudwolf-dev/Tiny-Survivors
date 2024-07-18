@@ -31,5 +31,5 @@ func _enter_state(new_state: int):
 	current_state = new_state
 	pass
 
-func _exit_state(state: States):
-	pass
+#func _exit_state(state: States):
+	#pass

@@ -115,6 +115,7 @@ func _on_animated_sprite_2d_frame_changed():
 
 func _on_health_points_died():
 	is_dead = true
+	collision.disabled = true
 	if is_dead:
 		ani_sprite.play("death")
 	pass # Replace with function body.
